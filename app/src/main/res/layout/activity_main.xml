@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="always"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--<androidx.core.widget.NestedScrollView android:layout_height="fill_parent"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:fillViewport="true"-->
+<!--    android:overScrollMode="always"-->
+<!--    android:scrollbarAlwaysDrawHorizontalTrack="true"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/myfilter"
+        android:hint="Search"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_search" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+ </LinearLayout>
+<!--</androidx.core.widget.NestedScrollView>-->
+
+</ScrollView>
